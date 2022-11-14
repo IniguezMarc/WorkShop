@@ -12,8 +12,8 @@
   --box-shadow3: rgba(0, 0, 0, 0.12);
   --box-shadow4: rgba(0, 0, 0, 0.17);
   --box-shadow5: rgba(0, 0, 0, 0.09);
-  --svg1-stroke: #00000009;
-  --svg2-stroke: #00000011;
+  --svg1-stroke: #ff0000;
+  --svg2-stroke: #ff0000;
 }
 
 [data-theme="dark"] {
@@ -25,8 +25,8 @@
   --box-shadow3: rgba(0, 0, 0, 0.12);
   --box-shadow4: rgba(0, 0, 0, 0.17);
   --box-shadow5: rgba(0, 0, 0, 0.09);
-  --svg1-stroke: #ffffff09;
-  --svg2-stroke: #ffffff15;
+  --svg1-stroke: #ff0000;
+  --svg2-stroke: #ff0000;
 }
 
 html,
@@ -132,9 +132,11 @@ section {
 #heart svg {
   width: 600px;
   height: 600px;
+  
 }
 
 #heart .path {
+  stroke: var(--svg1-stroke);
   stroke-dasharray: 850;
   stroke-dashoffset: 850;
   animation: animate1 40s linear infinite forwards;
@@ -146,6 +148,7 @@ section {
 }
 
 #word .path {
+  stroke: var(--svg2-stroke);
   stroke-dasharray: 850;
   stroke-dashoffset: 850;
   animation: animate1 30s linear infinite forwards;
