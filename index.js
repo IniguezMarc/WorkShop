@@ -1,7 +1,6 @@
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      console.log(entry.target);
       if (entry.target.hasAttribute("typed")) {
         entry.target.classList.add("typing-animation");
         let length = entry.target.textContent.length;
